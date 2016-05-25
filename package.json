@@ -1,6 +1,6 @@
 {
   "name": "qpm_hdwallet",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "hdwallet integration",
   "main": "index.js",
   "directories": {

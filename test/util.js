@@ -18,6 +18,14 @@ describe('Util Functions', function () {
 
   });
 
+  describe('hashToInts', function() {
+
+    it('hashToInts is a function', function () {
+      expect(( util.hashToInts )).to.be.a('function');
+    });
+
+  });
+
 
 
 });

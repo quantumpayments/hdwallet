@@ -3,7 +3,7 @@
 var Mnemonic = require('bitcore-mnemonic')
 var util = require('../')
 
-var m = new Mnemonic('flower blossom cruel culture doctor scale hazard word column cheap chest alien');
+var m = new Mnemonic('impulse decade luggage genre laundry route siren tuna ancient learn shallow dice');
 
 var webid = 'https://melvincarvalho.com/#me'
 
@@ -15,10 +15,10 @@ var privKey = util.mnemonicToPrivKey(m)
 
 console.log(privKey)
 
-address = util.webidAndPubKeyToAddress(webid, 'xpub661MyMwAqRbcGv9ZE8Kc2gG5nJAqHRcUQr5hKimSAqrhQqkjskXots3c49vcUXHGrX7n4pCYbLo9qF2RHFyXQBvHT8zjiEQJqVMeuFrP8Jf')
+address = util.webidAndPubKeyToAddress(webid, 'xpub661MyMwAqRbcG2s7TWDFo6A8saDZJBYkEiDC4gXVrmwAjDoZagf1wduTamQJ3iU1eoT2A2wTzk2zM4X7MNLs7tZ45iCYEXPSoLN5DUJcXXW', true)
 
 console.log(address)
 
-address = util.webidAndPrivKeyToAddress(webid, 'xprv9s21ZrQH143K4S5686nbfYKMEGLLsxtd3dA6XLMpcWKiY3RbLDDZM4j8CveaDKv3TtkZpgHFWsGhgN3DmvuZhoLP5V54Fj3Vo8dQAMeuiWS')
+address = util.webidAndPrivKeyToAddress(webid, 'xprv9s21ZrQH143K3YneMUgFRxDQKYP4tiptsVHbGJ7tJSQBrRUR39LmPqayjWY3fARoEBYMHvmQz69z8Xryj43mKAEWhPRtAGipChCC1QJSeLB', true)
 
 console.log(address)

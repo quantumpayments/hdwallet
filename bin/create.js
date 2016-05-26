@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-var Mnemonic = require('bitcore-mnemonic')
 var util = require('../')
 
-var m = new Mnemonic('impulse decade luggage genre laundry route siren tuna ancient learn shallow dice');
 
 var webid = 'https://melvincarvalho.com/#me'
+
+var m = 'pool payment random crash boil normal flight rather tool jazz bulk pull'
 
 var pubKey = util.mnemonicToPubKey(m)
 
@@ -15,10 +15,10 @@ var privKey = util.mnemonicToPrivKey(m)
 
 console.log(privKey)
 
-address = util.webidAndPubKeyToAddress(webid, 'xpub661MyMwAqRbcG2s7TWDFo6A8saDZJBYkEiDC4gXVrmwAjDoZagf1wduTamQJ3iU1eoT2A2wTzk2zM4X7MNLs7tZ45iCYEXPSoLN5DUJcXXW', true)
+address = util.webidAndPubKeyToAddress(webid, pubKey)
 
 console.log(address)
 
-address = util.webidAndPrivKeyToAddress(webid, 'xprv9s21ZrQH143K3YneMUgFRxDQKYP4tiptsVHbGJ7tJSQBrRUR39LmPqayjWY3fARoEBYMHvmQz69z8Xryj43mKAEWhPRtAGipChCC1QJSeLB', true)
+address = util.webidAndPrivKeyToAddress(webid, privKey)
 
 console.log(address)

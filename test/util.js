@@ -128,6 +128,19 @@ describe('Util Functions', function () {
 
   });
 
+  describe('webidAndPubKeyToAddress', function() {
+
+    it('webidAndPubKeyToAddress is a function', function () {
+      expect(( util.webidAndPubKeyToAddress )).to.be.a('function');
+    });
+
+    it('test webidAndPubKeyToAddress(\'https://melvincarvalho.com/#me\', \'xpub661MyMwAqRbcGS5JFpd4Tmxs3uzT3B2xxTFpkMzapBma8MoLWfkB479DYeojAHG4YmuZAkDWouB8HRg4ja3CGC8o6Mc5yx9hLNibsU1XZEL\', true) = \'mm6PV5cz6iDwE6eS6NFKMUK1Eoy5rkLdhP\'', function () {
+      expect(( util.webidAndPubKeyToAddress('https://melvincarvalho.com/#me', 'xpub661MyMwAqRbcGS5JFpd4Tmxs3uzT3B2xxTFpkMzapBma8MoLWfkB479DYeojAHG4YmuZAkDWouB8HRg4ja3CGC8o6Mc5yx9hLNibsU1XZEL', true).toString() )).to.equal('mm6PV5cz6iDwE6eS6NFKMUK1Eoy5rkLdhP');
+    });
+
+
+  });
+
 
   describe('webidAndPrivKeyToAddress', function() {
 

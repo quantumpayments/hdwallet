@@ -3,9 +3,9 @@
 var util = require('../')
 
 
-var webid = 'https://melvincarvalho.com/#me'
+var webid = 'http://melvincarvalho.com/#me'
 
-var m = 'pool payment random crash boil normal flight rather tool jazz bulk pull'
+var m = 'exercise minute bridge unable better undo between shoulder system foam sick age'
 
 var pubKey = util.mnemonicToPubKey(m)
 
@@ -15,7 +15,7 @@ var privKey = util.mnemonicToPrivKey(m)
 
 console.log(privKey)
 
-address = util.webidAndPubKeyToAddress(webid, pubKey)
+address = util.webidAndPubKeyToAddress(webid, pubKey, true)
 
 console.log(address)
 
